@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Crea una clase que utiliza el adaptador
 class CharacterFetcher
   def initialize(adapter)
     @adapter = adapter
