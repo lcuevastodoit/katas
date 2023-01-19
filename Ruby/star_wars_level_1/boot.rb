@@ -1,3 +1,7 @@
+require 'httparty'
+require 'json'
+require 'ostruct'
+
 Dir.glob('./app/**/*.rb').sort.each do |file|
   require file
 end

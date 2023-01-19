@@ -7,6 +7,7 @@ class CharacterFetcher
   end
 
   def fetch(id)
-    @adapter.fetch_character(id)
+    response = @adapter.fetch_character(id)
+    p response
   end
 end
