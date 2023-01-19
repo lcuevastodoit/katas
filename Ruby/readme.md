@@ -1,9 +1,12 @@
 ##  Language: Ruby
 ##  Design Pattern recommended: Adapter
 
+###  Install with
+
+```shell
+bundle install
+```
 ## Level 1 Problem:
-
-
 
 Create a Ruby application that allows you to retrieve information about Star Wars characters through an external API. The application should be able to display the name, species, and home world of a character given its ID. Use the Adapter pattern to adapt the API response to an object of a character class.
 
