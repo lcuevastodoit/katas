@@ -39,3 +39,8 @@ Hint: Use the Adapter pattern to adapt the API response to an object of the Char
 -  Create the character fetcher class to use the adapter retrieving the character info by id
 
 This problem is a challenge to apply the Adapter pattern to a real Star Wars situation. Good Luck !
+
+
+###  About the Adapter pattern
+
+The Adapter pattern in Ruby is a design pattern that allows objects with incompatible interfaces to work together. It is often used to adapt legacy code to work with new code or to allow different classes to work together that were not originally designed to do so. The adapter acts as a bridge between the two incompatible classes, providing a common interface for them to communicate through. In Ruby, the adapter pattern can be implemented using modules and/or class inheritance.
