@@ -18,9 +18,15 @@ In this kata, the WinnieThePooh class keeps track of a list of Adventure objects
     pooh = WinnieThePooh.new
     history = HistoryObserver.new
     pooh.add_observer(history)
-    pooh.add_adventure("Hunting for honey", "Hundred Acre Wood", "2020-01-01")
-    pooh.add_adventure("Getting stuck in rabbit's hole", "Hundred Acre Wood", "2020-01-02")
-    pooh.add_adventure("Rescuing Piglet", "Hundred Acre Wood", "2020-01-03")
+    pooh.add_adventure("Hunting for honey", "Hundred Acre Wood", "2023-01-01")
+    pooh.add_adventure("Getting stuck in rabbit's hole", "Hundred Acre Wood", "2023-01-02")
+    pooh.add_adventure("Rescuing Piglet", "Hundred Acre Wood", "2023-01-03")
+    pooh.list_adventures
+    
+    # Then It shows:
+    # Adventure: Hunting for honey, Location: Hundred Acre Wood, Date: 2023-01-01
+    # Adventure: Getting stuck in rabbit's hole, Location: Hundred Acre Wood, Date: 2023-01-02
+    # Adventure: Rescuing Piglet, Location: Hundred Acre Wood, Date: 2023-01-03
 ```
 
 ###  Note:
