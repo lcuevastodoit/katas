@@ -4,12 +4,11 @@
 class StarWarsAPIAdapter
   def initialize
     @base_url = 'https://swapi.dev/api/people'
-    @full_url = ''
   end
 
   def fetch_character(id)
-    @full_url = "#{@base_url}/#{id}"
-    character_response = fetch(@full_url)
+    full_url = "#{@base_url}/#{id}"
+    character_response = fetch(full_url)
     name, species, homeworld = character_response.values_at('name', 'species', 'homeworld')
     species = begin
       fetch(species.first)['name']
@@ -20,7 +19,7 @@ class StarWarsAPIAdapter
     Character.new(name, species, homeworld)
   end
 
-  def fetch(url)
-    Client.new(url).fetch
+  def fetch(full_url)
+    Client.new(full_url).fetch
   end
 end
